@@ -1,0 +1,115 @@
+.calccss{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+  background: linear-gradient(124deg,  #ff2424, #e81d1d, #e8b71d, #e3e81d, #1de840,#ff6600, #1ddde8,#99ff99, #dd00f3,#ffff66, #dd00f3);
+  background-size: 1800% 1800%;
+  
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+  
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%
+}
+}
+
+
+* {
+  box-sizing: border-box;
+}
+.calculator {
+  max-width: 320px;
+  background: rgb(0, 0, 0);
+  width: 600px;
+  border-radius: 35px;
+  border: 1px solid rgb(10, 229, 126);
+  height: 400px;
+  /* box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6); */
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 13px;
+}
+
+button {
+  min-height: 60px;
+  font-size: 20px;
+  font-weight: 100px;
+  border: none;
+  background: rgb(200, 200, 200);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.calc-numbers {
+  background: rgb(0, 0, 0);
+  color: yellow;
+  font-size: 2em;
+  border: 0;
+  padding: 0.3em;
+  text-align: right;
+  width: 100%;
+  height: 55px;
+  border-radius: 50px;
+  max-width: 320px;
+  border: 1px solid rgb(10, 229, 126);
+  margin-bottom : 20px;
+}
+.span-2 {
+  grid-column: span 2;
+}
+.span-3 {
+  grid-column: span 3;
+}
+.clear {
+  background-color: rgb(220, 220, 220);
+  color: yellow;
+}
+.btn {
+  background-color: blue;
+  color: #fff;
+}
+
+.orange:hover {
+  background: blue;
+}
+.btn:hover {
+  background: orange;
+}
+
+.btn:active {
+  background: rgb(173, 87, 87);
+}
+
+.orange {
+  background-color: orange;
+}
